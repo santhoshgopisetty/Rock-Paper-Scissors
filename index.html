@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image" href="images/RockPaperScissors.png">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <nav>
+        <div class="rps">
+            <h1>RockPaperScissors</h1>
+        </div>
+        <div class="options">
+            <a href="#" onclick="scrollToSection('game')">Play</a>
+            <a href="#" onclick="scrollToSection('RULES')">Rules</a>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="container">
+            <div class="bigrps">
+                <div class="bigrp">
+                    <h1>Rock Paper</h1>
+                </div>
+                <div class="bigs">
+                    <h1>Scissors</h1>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="sp" onclick="scrollToSection('game')">Start Playing</button>
+                <button class="lr" onclick="scrollToSection('RULES')">Learn Rules</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="move" id="game">
+        <div class="mini-container">
+            <div class="cym">
+                <h1>Choose Your Move</h1>
+            </div>
+            <div class="container-buttons">
+                <button class="r" onclick="playGame('rock')">
+                    <h1>Rock</h1>
+                </button>
+                <button class="p" onclick="playGame('paper')">
+                    <h1>Paper</h1>
+                </button>
+                <button class="s" onclick="playGame('scissors')">
+                    <h1>Scissors</h1>
+                </button>
+            </div>
+            <div class="ba">
+                <div class="battle-arena">
+                    <h1>Battle Arena</h1>
+                </div>
+                <div class="yc">
+                    <div class="you">
+                        <button class="man">👤</button>
+                        <h1 id="human">0</h1>
+                    </div>
+                    <div class="vs">
+                        <h1>VS</h1>
+                    </div>
+                    <div class="comp">
+                        <button class="ai">🤖</button>
+                        <h1 id="computer">0</h1>
+                    </div>
+                </div>
+                <div class="message">
+                    <h1 id="Result" class="RESULT">RESULT</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rules" id="RULES">
+        <div class="gr-container">
+            <div class="gr">
+                <h1 class="bigrg">Game Rules</h1>
+            </div>
+            <div class="htwc">
+                <div class="hp">
+                    <h1>How to Play</h1>
+                    <p>Each player chooses rock, paper, or scissors</p>
+                    <p>Both players reveal their choice simultaneously</p>
+                    <p>The winner is determined by the rules</p>
+                    <p>Best of 3 rounds wins the match</p>
+                </div>
+                <div class="wc">
+                    <h1>Winning Contributions</h1>
+                    <p><span>Rock</span> beats <span>Scissors</span></p>
+                    <p><span>Paper</span> beats <span>Rock</span></p>
+                    <p><span>Scissors</span> beats <span>Paper</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <div class="footrps">
+                <h2>RockPaperScissors</h2>
+            </div>
+            <p>The ultimate destination for the classic game</p>
+            <div class="privacy">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Contact</a>
+            </div>
+            <p>© 2024 RockPaperScissors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
